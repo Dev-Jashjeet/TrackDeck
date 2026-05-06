@@ -3,6 +3,7 @@ let password = document.querySelector("#password");
 const button = document.querySelector(".login-btn");
 let emailPassError = document.querySelectorAll(".error-message");
 let loader = document.querySelector(".loader-cont");
+const hideShow = document.querySelector(".toggle-icon");
 ;
 button.addEventListener('click', (e) => {
     e.preventDefault();
@@ -50,6 +51,16 @@ button.addEventListener('click', (e) => {
         emailPassError[0].style.opacity = "1";
         emailPassError[1].innerHTML = `Enter valid password`;
         emailPassError[1].style.opacity = "1";
+    }
+    return;
+});
+//Function for hide/show
+hideShow.addEventListener('click', () => {
+    if (password.type === "password") {
+        password.type = "text";
+    }
+    else {
+        password.type = "password";
     }
     return;
 });
