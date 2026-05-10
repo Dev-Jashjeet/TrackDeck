@@ -14,3 +14,4 @@ Personal Finance Manager is a web-based application that helps users efficiently
 *** Delete button starts working
 *** View All and transactions button on sidebar functionality implemented
 *** Side bar button click effect added
+*** Charts added and only last step is left
