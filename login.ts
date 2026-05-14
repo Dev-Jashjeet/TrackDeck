@@ -1,13 +1,12 @@
-let email = document.querySelector("#email")! as HTMLInputElement;
-let password = document.querySelector("#password")! as HTMLInputElement;
+import type { userDetails } from "./modules";
+
+const email = document.querySelector("#email")! as HTMLInputElement;
+const password = document.querySelector("#password")! as HTMLInputElement;
 const button = document.querySelector(".login-btn")! as HTMLButtonElement;
-let emailPassError = document.querySelectorAll(".error-message")! ;
-let loader = document.querySelector(".loader-cont")! as HTMLDivElement;
+const emailPassError = document.querySelectorAll(".error-message")! ;
+const loader = document.querySelector(".loader-cont")! as HTMLDivElement;
 const hideShow = document.querySelector(".toggle-icon")! as HTMLSpanElement;
-interface userDetails {
-    readonly email: string,
-    readonly password: string,
-};
+
 button.addEventListener('click', (e): void => {
     e.preventDefault();
     let count: number = 0;
@@ -57,6 +56,7 @@ button.addEventListener('click', (e): void => {
     }
     return;
 });
+
 //Function for hide/show
 hideShow.addEventListener('click', (): void => {
     if(password.type === "password") {
@@ -67,3 +67,5 @@ hideShow.addEventListener('click', (): void => {
     }
     return;
 });
+
+// Completed
