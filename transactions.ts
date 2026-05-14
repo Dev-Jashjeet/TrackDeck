@@ -1,5 +1,5 @@
 const transactionBodyElements = document.querySelectorAll(".common")! ;
-let transactionListHeight = document.querySelector(".tablecommon")! as HTMLDivElement;
+const transactionListHeight = document.querySelector(".tablecommon")! as HTMLDivElement;
 const sidebarsButton = document.querySelectorAll(".nav-item")! ;
 const viewAll = document.querySelector(".viewAll")! as HTMLAnchorElement;
 let click: boolean = false;
