@@ -261,9 +261,10 @@ body {
 }
 
 .form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr auto;
-  gap: 16px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 12px;
+  gap: 10px;
 }
 
 .form-row input,
@@ -274,7 +275,7 @@ body {
   color: white;
   font-size: 16px;
   border-radius: 14px;
-  padding: 16px 18px;
+  padding: 18px 25px;
   font-family: inherit;
 }
 
