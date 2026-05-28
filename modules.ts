@@ -3,12 +3,14 @@ export default interface user {
     readonly email: string,
     readonly password: string,
     readonly salary: number,
+    photo?: string,
     transactions: transaction[],
 }
 
 export interface transaction {
     readonly date: string,
     readonly amount: number,
+    readonly category: string,
     readonly type: "Income"|"Expense",
 }
 
@@ -25,5 +27,10 @@ export interface userData {
   readonly salary: number;
   readonly transactions: Array<object>;
 }
+
+export interface userDetails {
+    readonly email: string,
+    readonly password: string,
+};
 
 export type income = "Income"|"Expense";
