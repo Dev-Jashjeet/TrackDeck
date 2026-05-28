@@ -131,6 +131,10 @@ body {
   object-fit: cover;
 }
 
+.top-avatar img:hover {
+  cursor: pointer;
+}
+
 .sidebar-profile h4 {
   font-size: 17px;
   margin-bottom: 3px;
@@ -146,6 +150,10 @@ body {
   flex: 1;
   padding: 28px;
   display: block;
+}
+
+.file-icon {
+  display: none;
 }
 
 .topbar {
@@ -170,17 +178,12 @@ body {
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.04);
   color: white;
-  padding: 14px 18px;
+  padding: 14px 25px;
   border-radius: 14px;
   cursor: pointer;
   font-size: 16px;
   display: flex;
   align-items: center;
-}
-
-.theme-mode {
-    position: absolute;
-    right: 190px;
 }
 
 /* Cards */
