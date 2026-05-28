@@ -52,13 +52,3 @@ viewAll.addEventListener("click", (): void => {
     click = false;
     return;
 });
-
-// Function when user click reports button on side bar
-(sidebarsButton[2] as HTMLElement).addEventListener("click", (): void => {
-    for(let btns of sidebarsButton) {
-        btns.classList.remove("active");
-    }
-    (sidebarsButton[2] as HTMLElement).classList.add("active");
-    // Function implementation left
-    return;
-});
