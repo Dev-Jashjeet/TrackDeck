@@ -43,16 +43,11 @@
           <span>Transactions</span>
         </a>
 
-        <a class="nav-item">
-          <i class="fa-solid fa-chart-simple"></i>
-          <span>Reports</span>
-        </a>
-
       </nav>
 
       <div class="sidebar-profile">
         <div class="profile-img">
-          <img src="https://i.pravatar.cc/100?img=12" alt="Profile">
+          <img src=".//assets/null_user.png" alt="photo" class="profile-photo-cls">
         </div>
         <div>
           <h4 class="userprofile">Hello User</h4>
@@ -68,17 +63,16 @@
       <header class="topbar common">
         <h1 class="userprofile">Welcome, Jashjeet!</h1>
 
-        <button class="logout-btn theme-mode">
-            <i class="fa-solid fa-moon"></i>
-          </button>
-
         <div class="topbar-right">
           <button class="logout-btn">
             Logout
           </button>
 
           <div class="top-avatar">
-            <img src="https://i.pravatar.cc/100?img=12" alt="Avatar">
+            <label for="profile-photo">
+              <input type="file" id="profile-photo" class="file-icon" accept="image/jpeg, image/png, image/jpg">
+              <img src=".//assets/null_user.png" alt="photo" id="profilePic" class="profile-photo-cls">
+            </label>
           </div>
         </div>
       </header>
